@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background:transparent;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    font-size:large;
+    
+    
+}
+.container:hover{
+    background-color:none;
+}
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #a90505;
+    color: rgb(245, 242, 240);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: small;
+    
+    
+}
+
+button:hover {
+    background-color: #218838;
+}
+.para{
+    color:white;
+    font-size: 40px;
+}
+.mybutton{
+    font-size:2%;
+    text-align: center;
+}
+
+/* .bg_image not needed unless used specifically */

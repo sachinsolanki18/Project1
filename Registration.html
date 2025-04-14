@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css"><!--to link the external css file has"style2.css-->
+</head>
+<body>
+<!--<a href="C:\Users\sachi\OneDrive\Desktop\Html_sachin\End_page.html">End_page</a>-->
+   
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="End_page.html" method="get" onsubmit= "return handlesubmit()">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <form onsubmit= "return validateForm()">
+            <label for="Gender">Gender:</label>
+            <input type="text" id="gender"  required minlength="6">
+
+           <!-- <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>-->
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+            <button class="mybutton" onclick="showMessage()">Click for feedback</button>
+    <!--<div class="para">
+            <p id="demo">Hello js</p>
+            </div>
+            <button onclick="ChangeText()">ChangeText</button>!-->
+
+
+        </form>
+        <script>
+ function validateForm() {
+            let gender = document.getElementById("gender").value.trim();
+            if (gender === "") {
+                alert("Enter a valid gender");
+                return false; // stop form from submitting
+            }
+            return true; // allow form to submit
+        }
+
+        /*function ChangeText() {
+            document.getElementById("demo").innerHTML = "You clicked the button & content changed!";
+        }*/
+        
+        </script>
+
+    </div>
+    <script src="hello.js"></script><!--to link the external javascript  file has"hello.js"-->
+    <style>
+        .mybutton{
+            width: 150px; ;
+            height: 50px; ;
+            font-size: 16px;
+            color:white;
+            background-color: #ae0404;
+        }
+
+        
+    </style>
+</body>
+</html>
